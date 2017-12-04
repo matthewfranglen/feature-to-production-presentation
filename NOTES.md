@@ -80,6 +80,13 @@ We can only easily provide what we collected in the past, which may not cover th
 
 The Decahose is a statistically valid sample of all topics discussed on twitter, so using that would help a lot.
 The data for this would be cheap as we already had it.
+At this point I was asked about how long it would take to add this.
+
+Exploration and Design
+----------------------
+
+So at this point I had to design a solution and determine how much work would be involved.
+This is probably the most important part because a good design has such a great effect on the performance, maintainability and cost of the idea.
 
 Implementation
 --------------
