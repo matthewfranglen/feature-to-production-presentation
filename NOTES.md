@@ -164,6 +164,10 @@ You have to try to:
 Finding an accurate way to estimate implementation of an idea is really hard.
 If you find a solution to this then you can make millions.
 
+It's hard because you are always doing something new.
+If it is something old then you can use your old solution for it.
+That means you are always estimating something you don't know how to do.
+
 Implementation
 --------------
 
