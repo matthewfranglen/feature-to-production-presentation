@@ -103,7 +103,7 @@ The placement depends on what the idea requires, and what it provides.
 
 ### UHD
 
-So for UHD the system works using queries.
+So at Brandwatch the system works using queries.
 A query is a way to get information about a topic of discussion.
 To display the details of a discussion we read the query.
 
@@ -128,6 +128,20 @@ The boxes are things that produce, transforming or store data.
 The arrows are the flows of data.
 
 ### UHD
+
+The Decahose is only 10% of the public tweets.
+The historic data we have may be complete.
+We can't just mix them as that would under represent the twitter conversations.
+
+We need to be able to boost the twitter data to 100%, without altering anything else.
+Since we are dealing with queries that means we need two queries to allow us to alter one but not the other.
+
+This means that our service needs to be able to take two queries, boost the twitter data, and then merge the results.
+If we treat boosting and joining as queries that reference other queries then we are always dealing with queries which means that the code that calls us does not need to be aware of the change.
+
+If we think of regular Queries as leaf nodes and the Join and Boost queries as internal nodes we can see that we have a graph.
+Since we control the creation of it, we can guarantee that it is a Directed Acyclic Graph.
+This means we can operate over it recursively - a Join query does not have to know the type of queries it operates over.
 
 Implementation
 --------------
