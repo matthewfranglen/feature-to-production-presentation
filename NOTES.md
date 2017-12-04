@@ -143,6 +143,27 @@ If we think of regular Queries as leaf nodes and the Join and Boost queries as i
 Since we control the creation of it, we can guarantee that it is a Directed Acyclic Graph.
 This means we can operate over it recursively - a Join query does not have to know the type of queries it operates over.
 
+The final thing to consider is that the requests for data desire different things.
+It would be totally impractical to return all of the data available and have the front end perform aggregations over it.
+So instead the database is used to do this.
+
+The aggregations that are performed may need to be joined or boosted in different ways.
+It's not appropriate to blindly boost the number of unique authors for example.
+
+### Estimation
+
+It's really hard.
+You have to try to:
+
+ - Split the work into manageable units
+ - Determine the size of each unit
+ - Add it all up
+ - Vastly increase the total
+ - Still be wrong
+
+Finding an accurate way to estimate implementation of an idea is really hard.
+If you find a solution to this then you can make millions.
+
 Implementation
 --------------
 
