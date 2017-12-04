@@ -88,12 +88,46 @@ Exploration and Design
 So at this point I had to design a solution and determine how much work would be involved.
 This is probably the most important part because a good design has such a great effect on the performance, maintainability and cost of the idea.
 
-A poor design can have a great impact on the performance of the application.
+The desired design for this is quite loose.
+We just need to be able to determine how long it would take to build.
+Estimation is hard though, so this investigation can take some time.
+
+The first thing to understand is the idea.
+This sounds simple but it is not.
+You need to understand the technical details of the idea.
+
+You then need to work out how that can fit within the existing system.
+If you are creating something fresh then the existing system is the world.
+When adding to an application it is about understanding where the idea will fit.
+The placement depends on what the idea requires, and what it provides.
+
+### UHD
+
+So for UHD the system works using queries.
+A query is a way to get information about a topic of discussion.
+To display the details of a discussion we read the query.
+
+We wanted to add the Decahose data to what the user can see.
+So altering the code that returns the data is required.
+Since we want to be secure, and to alter the data that is returned, we can sit between the security boundary and the original query reader.
+
+### Internal Design
+
+Once you have identified the location of the change, you then need to work out what you actually need to change.
+
+A poor design for the change can have a great impact on the performance of the application.
 If you operate over and store data inefficiently then your application can become very slow as soon as you get a large amount of data.
+Making a lot of network requests is also very time consuming.
 
 Since this is a course on computer science I am going to assume you already know about what efficient code is.
 At this level of design you are dealing with entire data structures and algorithms as blocks.
 Just consider what you need, and then choose the best performing parts.
+
+It can help to think of this like a flow chart.
+The boxes are things that produce, transforming or store data.
+The arrows are the flows of data.
+
+### UHD
 
 Implementation
 --------------
