@@ -88,6 +88,13 @@ Exploration and Design
 So at this point I had to design a solution and determine how much work would be involved.
 This is probably the most important part because a good design has such a great effect on the performance, maintainability and cost of the idea.
 
+A poor design can have a great impact on the performance of the application.
+If you operate over and store data inefficiently then your application can become very slow as soon as you get a large amount of data.
+
+Since this is a course on computer science I am going to assume you already know about what efficient code is.
+At this level of design you are dealing with entire data structures and algorithms as blocks.
+Just consider what you need, and then choose the best performing parts.
+
 Implementation
 --------------
 
