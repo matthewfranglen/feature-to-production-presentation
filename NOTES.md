@@ -213,6 +213,10 @@ You are most able to design it when you have finished building it.
 That means that the design you will come up with when you have the least knowledge will be the worst design.
 Since you will be building new things each time you won't be able to just copy an existing blueprint.
 
+Fundamentally, ideas are usually poorly understood and woefully incomplete.
+A computer cannot work with ambiguous code, it must be precise.
+The act of implementing the idea requires the idea to become more precise.
+
 ### Agile
 
 It would be best to postpone design until the end.
