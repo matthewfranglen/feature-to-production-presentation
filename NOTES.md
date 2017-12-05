@@ -237,3 +237,45 @@ The aim is to work in complete, releasable, chunks.
 The evaluation stage is where the implementation can end, when it is judged to be good enough.
 Ideally the evaluation is a demo of the working system.
 Since you probably haven't written everything when its time to evaluate, you can fill out any missing parts with an implementation which just mimics enough of the missing behaviour.
+
+#### Explore / Design / Estimate
+
+When you are in this loop the work has already been broken down into sections.
+These sections are sometimes called stories.
+
+To implement a story you need to determine what is required, design a solution for that, and then estimate it.
+This is the same process that was done for the overall idea.
+This time it is done on a far smaller and more specific area.
+
+The reason that you do this is to determine if the story is specific enough, and to schedule it.
+If the story looks like a lot of work then it probably needs to be split up further.
+The aim is to get small stories that you can complete quickly.
+
+Small stories allow for measurable progress and avoid getting bogged down by surprises.
+A story should be a single piece of functionality that would be useful to the user.
+This tends to limit how small they can be.
+If you don't provide user value then what are you going to evaluate?
+
+#### Implement
+
+Actually writing the code will be one of the most enjoyable parts.
+If your team is well managed you should be able to code in solid blocks of time with a minimum of interruption.
+You should be able to achieve flow.
+
+There may be pressure to deliver the story as fast as possible.
+Remember that you, or a person much like you, will have to maintain this code in future.
+Be nice to those future people and try to write good code.
+
+Good code is hard to define.
+You are often pulled between three conflicting desires:
+
+ - Maintainable code - easy to understand and modify
+ - Efficient code - fast or low resource usage but hard to modify
+ - Quickly written code - tends to be low performance and hard to maintain
+
+Try to tend towards maintainable code.
+Maintainable code can be made faster, or expanded later.
+Performance issues are rarely prevented by blind optimisations.
+When performance is an issue you profile to find the slow code and then optimise it, the speed of most of the code is largely irrelevant.
+
+"Programs must be written for people to read, and only incidentally for machines to execute"
