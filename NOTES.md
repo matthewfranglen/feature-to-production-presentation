@@ -173,8 +173,40 @@ That means you are always estimating something you don't know how to do.
 I came up with an estimate for the Decahose work.
 It was wrong.
 
+If I had given an accurate estimate then the work may not have been done.
+The size of the estimate is the life or death of the idea.
+
+At this point the project proceeded so lets talk about getting the work done.
+
 Implementation
 --------------
+
+The way in which ideas have been built has changed over the years.
+
+### Waterfall
+
+At the beginning it was the norm to work in stages and for progress to be measured by completing stages.
+You would never return to a previous stage.
+
+Broadly speaking the stages were:
+
+ - Design
+ - Implementation
+ - Testing
+ - Release
+
+This was termed waterfall development, as it is very easy to go down a waterfall and much harder to go back up.
+This mirrors the idea that you progress through these stages and don't need to return to earlier ones.
+
+This system seems to mirror civil engineering in the real world.
+When you build a bridge you don't need to redesign it half way through building it.
+However the idea of a bridge is an old idea - you are just making a new one in a different place.
+How similar is software development to that?
+
+### Knowledge
+
+The problem with that approach is the amount of knowledge you have of the product that you are about to build.
+
 
 This ends up being a loop.
 
