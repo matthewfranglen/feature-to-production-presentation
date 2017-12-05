@@ -206,15 +206,34 @@ How similar is software development to that?
 ### Knowledge
 
 The problem with that approach is the amount of knowledge you have of the product that you are about to build.
+You know the least about it at the start.
+You know the most at the end.
+You are most able to design it when you have finished building it.
 
+That means that the design you will come up with when you have the least knowledge will be the worst design.
+Since you will be building new things each time you won't be able to just copy an existing blueprint.
+
+### Agile
+
+It would be best to postpone design until the end.
+Obviously you can't do this entirely.
+You can do this partially.
+
+You need a high level design.
+Once you have that you can then focus on the part you will build next.
+When you have done that you can think about the next section.
+Your design for the next section will be improved by the knowledge about the idea you gained by making the current section.
 
 This ends up being a loop.
 
-Explore & Design
-Estimate
-Implement
-Test
-Evaluate
-Repeat
+ - Explore & Design
+ - Estimate
+ - Implement
+ - Test
+ - Evaluate
+ - Repeat
 
-
+The aim is to work in complete, releasable, chunks.
+The evaluation stage is where the implementation can end, when it is judged to be good enough.
+Ideally the evaluation is a demo of the working system.
+Since you probably haven't written everything when its time to evaluate, you can fill out any missing parts with an implementation which just mimics enough of the missing behaviour.
