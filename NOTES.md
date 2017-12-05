@@ -283,3 +283,23 @@ Performance issues are rarely prevented by blind optimisations.
 When performance is an issue you profile to find the slow code and then optimise it, the speed of most of the code is largely irrelevant.
 
 "Programs must be written for people to read, and only incidentally for machines to execute"
+
+#### Test
+
+Implementation and testing usually go hand in hand.
+Testing usually treats code as a black box, and the different styles of testing vary the size of the box.
+
+A unit test will test an individual class or single piece of functionality.
+Other classes that are used are replaced with mimics, or mocks, which can be controlled.
+
+It will test that when given certain inputs, you observe certain effects on the system.
+Some of this testing will be about returned data.
+Some of it will be to test that the class correctly invokes methods on other classes.
+
+An integration test expands this to multiple classes working together.
+The aim of an integration test is to complement the unit tests by testing the connections between classes.
+
+An end to end test expands this to the entire application.
+At this point you can describe the test in terms of the behaviour of the user, so these tests establish that the observable behaviour is correct.
+The only thing that needs to be mocked is external systems which your application interacts with.
+You don't want the failure of a remote system to affect your tests.
