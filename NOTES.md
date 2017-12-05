@@ -310,3 +310,30 @@ Since you probably haven't written everything when its time to evaluate, you can
 It is quite normal for the idea to change as soon as the running system is observed.
 New ideas can be triggered, or adjustments to existing thoughts.
 This is another reason not to design everything at the beginning - the idea is being explored by implementing it.
+
+### UHD
+
+Since this was an internal part of the overall system we were able to incrementally implement it by doing a tracer bullet style approach.
+This approach involves implementing all parts of a single slice of the complete idea.
+This allows that single part to be evaluated and it should behave like the final version.
+
+For this the tracer bullet was a single form of data aggregation.
+This involved:
+
+ - Creating a framework for the application to support joining and boosting queries
+ - Implementing boosting and joining for one kind of aggregation
+
+This then allowed that single aggregation to be demonstrated in the running application.
+Every other aggregation was broken.
+
+We then expanded it, adding more boosting and joining implementations.
+When it was judged to be complete enough it was released to some customers for them to evaluate further.
+Their feedback shaped future development.
+
+### Release
+ - Releasing
+    - Hardware
+    - Deployment Languages
+ - Reviewing
+    - User uptake
+    - Feedback
