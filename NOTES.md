@@ -238,9 +238,6 @@ This ends up being a loop.
  - Repeat
 
 The aim is to work in complete, releasable, chunks.
-The evaluation stage is where the implementation can end, when it is judged to be good enough.
-Ideally the evaluation is a demo of the working system.
-Since you probably haven't written everything when its time to evaluate, you can fill out any missing parts with an implementation which just mimics enough of the missing behaviour.
 
 #### Explore / Design / Estimate
 
@@ -303,3 +300,13 @@ An end to end test expands this to the entire application.
 At this point you can describe the test in terms of the behaviour of the user, so these tests establish that the observable behaviour is correct.
 The only thing that needs to be mocked is external systems which your application interacts with.
 You don't want the failure of a remote system to affect your tests.
+
+#### Evaluate
+
+The evaluation stage is where the implementation can end, when it is judged to be good enough.
+The ideal evaluation is a demo of the application covering the new functionality.
+Since you probably haven't written everything when its time to evaluate, you can fill out any missing parts with an implementation which just mimics enough of the missing behaviour.
+
+It is quite normal for the idea to change as soon as the running system is observed.
+New ideas can be triggered, or adjustments to existing thoughts.
+This is another reason not to design everything at the beginning - the idea is being explored by implementing it.
