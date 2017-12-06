@@ -330,7 +330,63 @@ We then expanded it, adding more boosting and joining implementations.
 When it was judged to be complete enough it was released to some customers for them to evaluate further.
 Their feedback shaped future development.
 
+Testing this was done using a combination of unit tests and integration tests.
+The unit tests checked that each part of the application was well formed.
+The integration tests checked that the entire application returned the correct JSON data when operating over a known query.
+
 ### Release
+
+To release the application you must have a place for it to go.
+At this point I am just going to cover what the specific application requires.
+
+#### Servers
+
+To release the application we needed servers to run it.
+Since we were dealing with potentially large data sets, those servers needed to have a lot of memory.
+Operating over those sets then requires good CPU.
+Hard disk space was not a concern as it was an in-memory application.
+
+To put it on the servers we used a set of ansible playbooks.
+Ansible is a tool that allows you to write descriptions of what a server should be like.
+When you run it you indicate what servers to target, and then it changes each server until it matches the description.
+The description doesn't have to describe everything that is on a server, instead you just describe what you require for a single thing.
+There are several different tools that can do this.
+
+#### Cloud
+
+These tools are good, however a lot of things run in the cloud these days.
+The cloud is other peoples computers.
+Sometimes those other machines are just like the machines you might own directly, and you would use something like ansible to deploy to them.
+The thing that makes the cloud nice is the ability to abstract over the physical hardware.
+You no longer need to worry about individual machines, instead you divide up your CPU, RAM and disk space into chunks and use those chunks to run your applications.
+
+In this environment you get what you ask for.
+So instead of configuring individual machines, you work on describing your requirements.
+When you run your description virtual servers spring into being that are as you describe them.
+
+You pay for what you use, so this leads to a very stripped down system for running your applications that only contains the minimum required.
+Going further, there is no need to pay for environments if you are not getting any use out of them.
+
+It is possible to inspect the environments to determine their utilization.
+If they are being heavily used then you can create more, if they are underused then you can stop some of them.
+It takes time for the new environments to start, and it can take time for a stateful system to recover from a partial shutdown.
+This means that this tuning is not perfectly responsive.
+It is still very good.
+
+#### Monitoring
+
+When you start your environments you want them to keep running.
+There are lots of reasons why they may stop:
+
+ - They may be on a server that is about to be restarted.
+ - They might run out of memory.
+ - They might have a bug that causes them to shutdown.
+ - They might not shutdown, instead they might just stop working. Think about a deadlock or infinite loop.
+
+How can we handle these situations?
+We need to monitor the environments.
+
+
  - Releasing
     - Hardware
     - Deployment Languages
