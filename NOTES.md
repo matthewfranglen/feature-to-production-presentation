@@ -386,10 +386,41 @@ There are lots of reasons why they may stop:
 How can we handle these situations?
 We need to monitor the environments.
 
+There are lots of tools for monitoring the environments.
+We can split them in three:
 
- - Releasing
-    - Hardware
-    - Deployment Languages
+ - Alerts tell you when things are bad
+ - Metrics tell you how things change over time
+ - Logs tell you what happened at a given time
+
+Alerts provide the current status.
+When this becomes bad they can trigger things like notifications or phone messages.
+This means you can take remedial action.
+For critical applications you may need to take immediate action even out of office hours.
+
+Metrics provide a way to compare things over time.
+If the application seems slow then you might look at how the CPU load has recently changed.
+You can create metrics to track the performance of your application in terms that you care about.
+How many pages did you serve yesterday?
+How many people signed up?
+
+For programmers, metrics can let you determine things like:
+
+ - If a specific release caused a performance regression
+ - How much you can do in a given period of time
+ - How many machines you need to meet demand
+
+Logs let you debug things that happened a while ago.
+When a user writes to tell you that their payment failed, the failed payment has already occurred.
+You can't just attach a debugger and look at the current state.
+Instead you need to review the logs to see what problems occurred at that time.
+
+Logs are typically written to files.
+It's difficult to search a lot of files on different machines.
+Tools have been created which allow you to collect the logs together and filter the messages.
+This makes it much easier to work with them.
+
+
  - Reviewing
     - User uptake
     - Feedback
