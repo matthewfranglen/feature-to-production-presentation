@@ -420,7 +420,21 @@ It's difficult to search a lot of files on different machines.
 Tools have been created which allow you to collect the logs together and filter the messages.
 This makes it much easier to work with them.
 
+### Reviewing
 
- - Reviewing
-    - User uptake
-    - Feedback
+After releasing something it is good to have an honest review of how the project went and how successful the idea is.
+There are two things that you want to review here:
+
+ - How successful is the idea
+ - How well did the project go
+
+The best ideas are widely used, and so will get a lot of exposure.
+The more exposure an idea has the more feedback you will get about it.
+If you actively solicit that feedback and show that it is valued then you can get even more ideas for the next project.
+Bug reports and feature requests are often very similar - they are a request for a change in behaviour.
+Those changes might be good ideas.
+
+The best teams can implement ideas quickly and efficiently.
+The way that you run a project has a big impact on the quality and speed of delivery.
+It's really good to actively review and alter how you run a project.
+Doing a retrospective after completing something is really valuable as it gives a chance to review how all parts of the project worked.
