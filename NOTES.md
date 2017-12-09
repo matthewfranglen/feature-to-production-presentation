@@ -454,10 +454,14 @@ We can split them in three:
  - Metrics tell you how things change over time
  - Logs tell you what happened at a given time
 
+[Alerts Slide]
+
 Alerts provide the current status.
 When this becomes bad they can trigger things like notifications or phone messages.
 This means you can take remedial action.
 For critical applications you may need to take immediate action even out of office hours.
+
+[Metrics Slide]
 
 Metrics provide a way to compare things over time.
 If the application seems slow then you might look at how the CPU load has recently changed.
@@ -471,6 +475,8 @@ For programmers, metrics can let you determine things like:
  - How much you can do in a given period of time
  - How many machines you need to meet demand
 
+[Logs Slide]
+
 Logs let you debug things that happened a while ago.
 When a user writes to tell you that their payment failed, the failed payment has already occurred.
 You can't just attach a debugger and look at the current state.
@@ -482,6 +488,8 @@ Tools have been created which allow you to collect the logs together and filter 
 This makes it much easier to work with them.
 
 ### Reviewing
+
+[Review Slide]
 
 After releasing something it is good to have an honest review of how the project went and how successful the idea is.
 There are two things that you want to review here:
@@ -499,3 +507,10 @@ The best teams can implement ideas quickly and efficiently.
 The way that you run a project has a big impact on the quality and speed of delivery.
 It's really good to actively review and alter how you run a project.
 Doing a retrospective after completing something is really valuable as it gives a chance to review how all parts of the project worked.
+
+### Brandwatch
+
+[Contact Slide]
+
+Brandwatch is a great place to work.
+Looking for good programmers right now.
