@@ -21,6 +21,8 @@ They are good theoretically however have limited practical experience.
 Introduction
 ------------
 
+[Brandwatch Slide]
+
 I'm Matthew from Brandwatch.
 Brandwatch ...
 
@@ -35,7 +37,11 @@ Will use a project from Brandwatch to demonstrate each of the steps.
 Features
 --------
 
+[Idea Slide]
+
 How do you know what to build, or what to change?
+
+[Constraint Slide]
 
 Every time you decide to build something, you have constraints.
 The constraints can be things like money, time or expertise.
@@ -50,16 +56,22 @@ You need to find what is cheap for you and valuable to others.
 
 Finding out what would be best to build is hard.
 
+[Idea Slide]
+
 You can find things to build in many ways
 
  - You may have a strong idea about what your startup is for, and you still need to fill in some missing functionality
  - You can get ideas from existing users of your application, through bug reports and suggestions
  - You can evaluate competing products
 
+[Value Slide]
+
 Then each idea needs to be valued.
 The best valuation is to be able to sell the product before creating it.
 Everything else is an estimate.
 Estimation is hard.
+
+[Size Slide]
 
 Finally you need to know how much work it is.
 
@@ -69,6 +81,8 @@ That would be a good thing to build!
 Estimating the work required for an idea is hard, and it's likely you will get involved at this point.
 
 ### UHD
+
+[UHD Slide]
 
 At Brandwatch we get the Decahose.
 This is 10% of all public tweets.
@@ -85,6 +99,8 @@ At this point I was asked about how long it would take to add this.
 Exploration and Design
 ----------------------
 
+[Design Slide]
+
 So at this point I had to design a solution and determine how much work would be involved.
 This is probably the most important part because a good design has such a great effect on the performance, maintainability and cost of the idea.
 
@@ -92,9 +108,13 @@ The desired design for this is quite loose.
 We just need to be able to determine how long it would take to build.
 Estimation is hard though, so this investigation can take some time.
 
+[Idea Slide]
+
 The first thing to understand is the idea.
 This sounds simple but it is not.
 You need to understand the technical details of the idea.
+
+[System Slide]
 
 You then need to work out how that can fit within the existing system.
 If you are creating something fresh then the existing system is the world.
@@ -102,6 +122,8 @@ When adding to an application it is about understanding where the idea will fit.
 The placement depends on what the idea requires, and what it provides.
 
 ### UHD
+
+[Analytics Slide]
 
 So at Brandwatch the system works using queries.
 A query is a way to get information about a topic of discussion.
