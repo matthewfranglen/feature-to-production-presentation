@@ -1,11 +1,11 @@
 Overview
 --------
 
-This will cover how a feature makes it into production.
+This will cover how an idea makes it into production.
 The audience is the Masters students of Sussex University.
 They are good theoretically however have limited practical experience.
 
- - How are features created and defined
+ - How are ideas created and defined
  - Implementation
     - Design
     - Coding
