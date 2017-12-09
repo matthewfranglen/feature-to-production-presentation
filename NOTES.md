@@ -137,6 +137,8 @@ Since we want to be secure, and to alter the data that is returned, we can sit b
 
 ### Internal Design
 
+[Internal Design Slide]
+
 Once you have identified the location of the change, you then need to work out what you actually need to change.
 
 A poor design for the change can have a great impact on the performance of the application.
@@ -147,11 +149,15 @@ Since this is a course on computer science I am going to assume you already know
 At this level of design you are dealing with entire data structures and algorithms as blocks.
 Just consider what you need, and then choose the best performing parts.
 
+[Flow Chart Slide]
+
 It can help to think of this like a flow chart.
 The boxes are things that produce, transforming or store data.
 The arrows are the flows of data.
 
 ### UHD
+
+[UHD Slide]
 
 The Decahose is only 10% of the public tweets.
 The historic data we have may be complete.
@@ -163,9 +169,13 @@ Since we are dealing with queries that means we need two queries to allow us to 
 This means that our service needs to be able to take two queries, boost the twitter data, and then merge the results.
 If we treat boosting and joining as queries that reference other queries then we are always dealing with queries which means that the code that calls us does not need to be aware of the change.
 
+[Graph Slide]
+
 If we think of regular Queries as leaf nodes and the Join and Boost queries as internal nodes we can see that we have a graph.
 Since we control the creation of it, we can guarantee that it is a Directed Acyclic Graph.
 This means we can operate over it recursively - a Join query does not have to know the type of queries it operates over.
+
+[Analytics Slide]
 
 The final thing to consider is that the requests for data desire different things.
 It would be totally impractical to return all of the data available and have the front end perform aggregations over it.
@@ -175,6 +185,8 @@ The aggregations that are performed may need to be joined or boosted in differen
 It's not appropriate to blindly boost the number of unique authors for example.
 
 ### Estimation
+
+[Estimation Slide]
 
 It's really hard.
 You have to try to:
@@ -204,6 +216,8 @@ At this point the project proceeded so lets talk about getting the work done.
 
 Implementation
 --------------
+
+[Implementation Slide]
 
 The way in which ideas have been built has changed over the years.
 
