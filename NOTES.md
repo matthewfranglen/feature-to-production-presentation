@@ -223,11 +223,14 @@ The way in which ideas have been built has changed over the years.
 
 ### Waterfall
 
+[Waterfall Slide]
+
 At the beginning it was the norm to work in stages and for progress to be measured by completing stages.
 You would never return to a previous stage.
 
 Broadly speaking the stages were:
 
+ - Requirements
  - Design
  - Implementation
  - Testing
@@ -243,6 +246,8 @@ How similar is software development to that?
 
 ### Knowledge
 
+[Knowledge Slide]
+
 The problem with that approach is the amount of knowledge you have of the product that you are about to build.
 You know the least about it at the start.
 You know the most at the end.
@@ -257,9 +262,13 @@ The act of implementing the idea requires the idea to become more precise.
 
 ### Agile
 
+[Agile Slide]
+
 It would be best to postpone design until the end.
 Obviously you can't do this entirely.
 You can do this partially.
+
+[Agile Flow Slide]
 
 You need a high level design.
 Once you have that you can then focus on the part you will build next.
@@ -351,6 +360,8 @@ This is another reason not to design everything at the beginning - the idea is b
 
 ### UHD
 
+[Tracer Bullet Slide]
+
 Since this was an internal part of the overall system we were able to incrementally implement it by doing a tracer bullet style approach.
 This approach involves implementing all parts of a single slice of the complete idea.
 This allows that single part to be evaluated and it should behave like the final version.
@@ -374,15 +385,21 @@ The integration tests checked that the entire application returned the correct J
 
 ### Release
 
+[Release Slide]
+
 To release the application you must have a place for it to go.
 At this point I am just going to cover what the specific application requires.
 
 #### Servers
 
+[Server Slide]
+
 To release the application we needed servers to run it.
 Since we were dealing with potentially large data sets, those servers needed to have a lot of memory.
 Operating over those sets then requires good CPU.
 Hard disk space was not a concern as it was an in-memory application.
+
+[Playbook Slide]
 
 To put it on the servers we used a set of ansible playbooks.
 Ansible is a tool that allows you to write descriptions of what a server should be like.
@@ -392,11 +409,15 @@ There are several different tools that can do this.
 
 #### Cloud
 
+[Cloud Slide]
+
 These tools are good, however a lot of things run in the cloud these days.
 The cloud is other peoples computers.
 Sometimes those other machines are just like the machines you might own directly, and you would use something like ansible to deploy to them.
 The thing that makes the cloud nice is the ability to abstract over the physical hardware.
 You no longer need to worry about individual machines, instead you divide up your CPU, RAM and disk space into chunks and use those chunks to run your applications.
+
+[Cloud Deployment Slide]
 
 In this environment you get what you ask for.
 So instead of configuring individual machines, you work on describing your requirements.
@@ -412,6 +433,8 @@ This means that this tuning is not perfectly responsive.
 It is still very good.
 
 #### Monitoring
+
+[Monitoring Slide]
 
 When you start your environments you want them to keep running.
 There are lots of reasons why they may stop:
