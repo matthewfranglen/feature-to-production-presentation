@@ -129,6 +129,8 @@ So at Brandwatch the system works using queries.
 A query is a way to get information about a topic of discussion.
 To display the details of a discussion we read the query.
 
+[Placement in System Slide]
+
 We wanted to add the Decahose data to what the user can see.
 So altering the code that returns the data is required.
 Since we want to be secure, and to alter the data that is returned, we can sit between the security boundary and the original query reader.
